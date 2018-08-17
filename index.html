@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spring-Summer:Fonts</title>
+          
+   </head>
+    <body background="pageimage.jpg">
+                  <center> 
+                      <div style="margin: 100px;background-color:darkkhaki " >
+                       <label id="font1" style="font-family: arial;font-size: 60px" >Activities</label>  
+                      </div>
+                  </center>
+        
+                      <div><center>
+            <table border="12" cellpadding="4" style="width: 80%;margin-top: 20px;background-color: burlywood" >
+                <tr>
+                    <th><b style="color: blue">Content 1</b></th>
+                    <th><b style="color: blue">Content 2</b></th>
+                </tr>
+                <tr>
+                    <th style="background-color: lightskyblue"><p><span style="color:red"> SUMMER</span> is the hottest of the four temperate seasons, falling after spring and before autumn. At the summer solstice, the days are longest and the nights are shortest,
+                            with day-length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition and culture. When it is summer in the Northern Hemisphere,
+                            it is winter in the Southern Hemisphere, and vice-versa. </p></th>
+                    <th style="background-color: lightskyblue"><p style=" margin-top: -10px"><span style="color:green">SPRING</span> is one of the four conventional temperate seasons, following winter and preceding summer.
+                            There are various technical definitions of spring, but local usage of the term varies according to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and vice versa. At the spring, or vernal,
+                            equinox, days are approximately 12 hours long with day length increasing as the season progresses.
+                    </p></th>   
+                </tr>
+                <tr>
+                    <th><label style="color: red">Press the button (Summer) to change the title to : summer font</label></th>
+                    <th><button  style="font-size: 25px;background-image: url(summer.png); color:red" onclick="summer()">Summer</button></th>
+                </tr>
+                 <tr>
+                    <th><label style="color: green">Press the button (Spring) to change the title to : spring font</label></th>
+                    <th><button style="font-size: 25px;color:green; background-image: url(spring.jpg);" onclick="spring()">Spring</button></th>
+                </tr>
+                 <tr>
+                    <th><label>Press the button ( Default)to change the title to : Default font</label></th>
+                    <th><button style="font-size: 25px;color:lightslategray" onclick="deffault()" >Default</button></th>
+                </tr>
+                
+            </table></center>
+        </div>
+        <script type="text/javascript">
+            function summer(){
+             document.getElementById("font1").style.font="100px My Summer,serif";
+             document.getElementById("font1").style.color="red";
+            }
+            function spring(){
+             document.getElementById("font1").style.font ="60px Spring Time,serif";
+             document.getElementById("font1").style.color="green";
+            }
+            </script>
+             <script type="text/javascript">
+            function deffault(){
+             document.getElementById("font1").style.font ="80px arial,serif";
+             document.getElementById("font1").style.color="black";
+            }
+            </script>
+        
+    </body>
+</html>
